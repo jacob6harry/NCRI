@@ -3,25 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Debt Payoff Calculator</title>
+    <title>NCRI Debt Payoff Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> <!-- External CSS file for styling -->
 </head>
 <body>
     <div class="calculator">
-        <h1>Debt Payoff Calculator</h1>
+        <h1>NCRI Debt Payoff Calculator</h1>
         <form id="debtForm">
-            <label for="balance">Total Balance</label>
-            <input type="number" id="balance" placeholder="Enter total balance" required>
+            <label for="balance">Total Balance Placed at NCRI</label>
+            <input type="number" id="balance" placeholder="$0.00" required>
 
             <label for="frequency">Payment Frequency</label>
             <select id="frequency" required>
                 <option value="monthly">Monthly</option>
                 <option value="weekly">Weekly</option>
-                <option value="biweekly">BiWeekly</option>
+                <option value="biweekly">Bi-Weekly</option>
             </select>
 
             <label for="payment">Payment Amount</label>
-            <input type="number" id="payment" placeholder="Enter payment amount" required>
+            <input type="number" id="payment" placeholder="$0.00" required>
 
             <button type="button" onclick="calculateDebt()">Calculate</button>
         </form>
