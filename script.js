@@ -16,15 +16,15 @@ function calculateDebt() {
     const resultElement = document.getElementById('months');
     resultElement.innerText = Math.ceil(months);
 
-    // Confetti inside result box
+    // Confetti inside the result box
     const resultBox = document.getElementById('result');
-    const rect = resultBox.getBoundingClientRect();
-
+    
     confetti({
         particleCount: 100,
-        spread: 70,
-        origin: { x: (rect.left + rect.right) / 2 / window.innerWidth, y: (rect.top + rect.bottom) / 2 / window.innerHeight },
-        startVelocity: 30,
-        elementCount: 200,
+        spread: 60,
+        origin: {
+            x: (resultBox.offsetLeft + resultBox.offsetWidth / 2) / window.innerWidth,
+            y: (resultBox.offsetTop + resultBox.offsetHeight / 2) / window.innerHeight
+        }
     });
 }
