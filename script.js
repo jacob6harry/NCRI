@@ -13,5 +13,18 @@ function calculateDebt() {
         months = balance / (payment * 2);
     }
 
-    document.getElementById('result').innerText = Math.ceil(months);
+    const resultElement = document.getElementById('months');
+    resultElement.innerText = Math.ceil(months);
+
+    // Confetti inside result box
+    const resultBox = document.getElementById('result');
+    const rect = resultBox.getBoundingClientRect();
+
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { x: (rect.left + rect.right) / 2 / window.innerWidth, y: (rect.top + rect.bottom) / 2 / window.innerHeight },
+        startVelocity: 30,
+        elementCount: 200,
+    });
 }
