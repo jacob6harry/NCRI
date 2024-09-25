@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f6f7fb; /* Light background for a clean, modern look */
+    background-color: white; /* Full white background */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@ body {
 }
 
 .calculator {
-    background-color: white;
+    background-color: white; /* White calculator background */
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -45,10 +45,11 @@ button:hover {
 .result {
     margin-top: 20px;
     padding: 15px;
-    background-color: #007bff;
-    color: white;
+    background-color: white; /* White result background */
+    color: #007bff;
     font-size: 18px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+    position: relative;
+    overflow: hidden;
 }
-
